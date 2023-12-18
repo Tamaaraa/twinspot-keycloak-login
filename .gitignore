@@ -1,0 +1,8 @@
+bin/
+conf/
+data/
+lib/
+providers/
+LICENSE.txt
+README.md
+version.txt
