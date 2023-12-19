@@ -29,14 +29,9 @@
                         <label for="password" class="${properties.kcLabelClass!}">${msg("password")}</label>
 
                         <div class="${properties.kcInputGroup!}">
-                            <input tabindex="2" id="password" class="${properties.kcInputClass!}" name="password" type="password" autocomplete="off" placeholder="${msg('Password')}"
+                            <input tabindex="2" id="password" class="${properties.kcInputClass!}" name="password" type="password" autocomplete="off" placeholder="${msg('enterPassword')}"
                                    aria-invalid="<#if messagesPerField.existsError('username','password')>true</#if>"
                             />
-                            <button class="pf-c-button pf-m-control" type="button" aria-label="${msg('showPassword')}"
-                                    aria-controls="password"  data-password-toggle
-                                    data-label-show="${msg('showPassword')}" data-label-hide="${msg('hidePassword')}">
-                                <i class="fa fa-eye" aria-hidden="true"></i>
-                            </button>
                         </div>
 
                         <#if usernameHidden?? && messagesPerField.existsError('username','password')>
@@ -57,6 +52,7 @@
                                         <#else>
                                             <input tabindex="3" id="rememberMe" name="rememberMe" type="checkbox"> ${msg("rememberMe")}
                                         </#if>
+                                         <span class="checkmark"></span>
                                     </label>
                                 </div>
                             </#if>

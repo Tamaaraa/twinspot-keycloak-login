@@ -5,10 +5,123 @@
   background: none;
 }
 
+html {
+  background: #68888c;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  font-family: Plus Jakarta Sans;
+  color: var(--Gray-50, #5f6d7e);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 125% */
+  letter-spacing: -0.016px;
+}
+
+.other-thing {
+  background: #a8c0c3;
+}
+
+.pf-c-form-control:not(textarea) {
+  height: 48px;
+}
+
+.pf-c-form-control {
+  padding: 14px 16px;
+  height: 48px;
+  font-size: 14px;
+  line-height: 14px;
+  background: #f2f2f2;
+  border: none;
+}
+
+.pf-c-form-control[aria-invalid="true"] {
+  background-repeat: no-repeat;
+}
+
+.info-box {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  margin: auto 60px;
+  position: absolute;
+  bottom: 80px;
+}
+
+.twinspot-info h1 {
+  font-size: 32px;
+  line-height: 130%;
+}
+
+.pf-c-button.pf-m-primary {
+  background-color: #151f22;
+  height: 48px;
+  color: var(--Neutral-100, #f8f9fb);
+  font-family: Plus Jakarta Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: -0.014px;
+}
+
+.tt-copyright {
+  position: fixed;
+  left: 32px;
+  bottom: 32px;
+  color: var(--Gray-50, #5f6d7e);
+  font-size: 14px;
+}
+
+.login-pf-page,
+.other-thing {
+  flex: 1;
+  width: 50%;
+}
+
+body h2 {
+  color: #2e3646;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px; /* 62.5% */
+  letter-spacing: -0.032px;
+}
+body h4 {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 125% */
+  letter-spacing: -0.016px;
+}
+
+label {
+  color: var(--Gray-50, #5f6d7e);
+  font-size: 14px;
+}
+
 .login-pf body {
-  background: white;
-  background-size: cover;
-  height: 100%;
+  background: #f8f9fb;
+}
+
+.login-pf-page {
+  margin: 0 auto;
+}
+
+.pyramid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.svg-item {
+  width: 135px;
+  height: 156px;
+  background: url("../img/logo.svg") no-repeat center center / contain;
 }
 
 textarea.pf-c-form-control {
@@ -70,10 +183,24 @@ a#kc-current-locale-link::after {
   width: 100%;
 }
 
+.return-to-login a {
+  color: var(--Gray-50, #5f6d7e);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.return-to-login {
+  margin-top: 2em;
+  text-align: center;
+}
+
 div.kc-logo-text {
-  background-image: url(../img/keycloak-logo-text.png);
+  background-image: url("https://assets-global.website-files.com/642ae770b41e726e17aced7d/642f28b6fcffd07d18a0120c_Logo%20incl%20spacing.svg");
   background-repeat: no-repeat;
-  height: 63px;
+  position: fixed;
+  top: 32px;
+  left: 32px;
+  height: 40px;
   width: 300px;
   margin: 0 auto;
 }
@@ -161,7 +288,7 @@ div.kc-logo-text span {
 #kc-info-wrapper {
   font-size: 13px;
   padding: 15px 35px;
-  background-color: #ffffff;
+  background-color: #f8f9fb;
 }
 
 #kc-form-options span {
@@ -185,6 +312,7 @@ div.kc-logo-text span {
 }
 
 #kc-registration {
+  margin-top: 2em;
   margin-bottom: 0;
 }
 
@@ -366,7 +494,7 @@ ul#kc-totp-supported-apps {
 
 @media (max-width: 767px) {
   .login-pf body {
-    background: white;
+    background: #f8f9fb;
   }
 
   #kc-header {
@@ -489,6 +617,7 @@ ul#kc-totp-supported-apps {
 }
 
 .card-pf {
+  background-color: #f8f9fb;
   margin: 0 auto;
   padding: 0 20px;
   max-width: 500px;
@@ -551,7 +680,11 @@ ul#kc-totp-supported-apps {
 .contact-support-link,
 .forgot-password {
   text-decoration: underline;
-  color: #363636;
+  color: var(--Gray-50, #5f6d7e);
+}
+
+.forgot-password {
+  font-size: 14px;
 }
 
 #kc-form-login div.form-group:last-of-type,
