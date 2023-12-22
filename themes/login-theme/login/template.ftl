@@ -162,7 +162,9 @@
     </div>
     <div class="right-side">
         <div class="info-box">
-            <div class="svg-item"></div>
+            <div class="svg-container">
+                <div class="svg-item"></div>
+            </div>
             <span class="${properties.ttInfoClass!}"><h1>${msg("twinSpotSummary")}</h1></span>
             <span class="${properties.ttInfoReference!}"><h3>${msg("twinSpotTopicsRef")}</h3></span>
         </div>
